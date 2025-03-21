@@ -172,4 +172,9 @@ func main() {
 	product := Product{name: "Product 1", price: 100}
 	updatePrice(&product, 120)
 	fmt.Println("new price", product.price)
+
+	// defer in golang -> Hello World 123
+	defer fmt.Println("123")
+	defer fmt.Println("World")
+	fmt.Println("Hello")
 }
